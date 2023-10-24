@@ -1,0 +1,72 @@
+/* Variables */
+$font-family: Verdana, Geneva, Tahoma, sans-serif;
+$font-size-logo: 1.5em;
+$font-size-link: 1.1em;
+$font-size-h1: 1.3em;
+$font-size-h2: 1.2em;
+$font-size-h3: 1.1em;
+$font-size-small: 0.9em;
+$color-b: #263547;
+$color-r: #FD4345;
+$color-w: #FFFFFF;
+
+
+/* Layout for every html page */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto 1fr auto;
+    font-family: $font-family;
+}
+
+header, footer {
+    padding: 1rem 2rem;
+    display: grid;
+    grid-template-columns: min-content auto;
+    color: $color-b;
+
+    .logo-ql {
+        font-size: $font-size-logo;
+
+        a {
+            text-decoration: none;
+            color: $color-b;
+        }
+
+        a:hover {
+            opacity: 0.7;
+        }
+    }
+
+    nav {
+        padding-left: 3rem;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        
+        a {
+            padding: 0rem 1rem;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            font-size: $font-size-link;
+            color: $color-b;
+        }
+        
+        a:hover {
+            border-bottom: 0.35rem solid $color-r;
+            color: $color-r;
+        }
+    }
+}
+
+footer {
+    border-top: 0.15rem solid $color-r;
+}
