@@ -1,5 +1,5 @@
 /* Variables */
-/* Layout for every html page */
+/* Layout for html page */
 * {
   margin: 0;
   padding: 0;
@@ -17,23 +17,21 @@ header, footer {
   padding: 1rem 2rem;
   display: grid;
   grid-template-columns: min-content auto;
-  color: #263547;
 }
 header .logo-ql, footer .logo-ql {
   font-size: 1.5em;
 }
 header .logo-ql a, footer .logo-ql a {
   text-decoration: none;
-  color: #263547;
 }
 header .logo-ql a:hover, footer .logo-ql a:hover {
   opacity: 0.7;
 }
 header nav, footer nav {
-  padding-left: 3rem;
-  height: 100%;
   display: flex;
   flex-wrap: wrap;
+  height: 100%;
+  padding-left: 3rem;
 }
 header nav a, footer nav a {
   padding: 0rem 1rem;
@@ -41,15 +39,46 @@ header nav a, footer nav a {
   align-items: center;
   text-decoration: none;
   font-size: 1.1em;
-  color: #263547;
+  transition-duration: 0.3s;
 }
 header nav a:hover, footer nav a:hover {
   border-bottom: 0.35rem solid #FD4345;
   color: #FD4345;
 }
 
+header {
+  color: #263547;
+}
+header a {
+  color: #263547;
+}
+
 footer {
-  border-top: 0.15rem solid #FD4345;
+  color: #FFFFFF;
+  background-color: #263547;
+}
+footer a {
+  color: #FFFFFF;
+}
+
+/* Mobiles devices */
+@media screen and (max-width: 700px) {
+  header, footer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    column-gap: 1rem;
+    row-gap: 1rem;
+  }
+  header nav, footer nav {
+    justify-content: center;
+    row-gap: 0.5rem;
+    height: auto;
+    padding-left: 0rem;
+  }
+  footer {
+    flex-direction: column-reverse;
+  }
 }
 
 /*# sourceMappingURL=layout.css.map */
