@@ -27,9 +27,9 @@ function showFormation(button) {
             })
             
             document.querySelector(`#${formation}`).style.display = 'flex';
+            button.id = 'current-btn';
             button.style.color = '#FD4345';
             button.style.borderColor = '#FD4345'; 
-            button.id = 'current-btn';
 }
 
 

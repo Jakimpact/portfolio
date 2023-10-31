@@ -168,11 +168,13 @@ main {
             .tech-div {
                 display: flex;
                 flex-wrap: wrap;
+                justify-content: center;
                 column-gap: 4rem;
                 row-gap: 1rem;
 
                 h3 {
                     padding-bottom: 1rem;
+                    text-align: center;
                 }
             }
 

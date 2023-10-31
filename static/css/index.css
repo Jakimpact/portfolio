@@ -228,11 +228,13 @@ main small {
 .ct-3 .content .text .tech-div {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   column-gap: 4rem;
   row-gap: 1rem;
 }
 .ct-3 .content .text .tech-div h3 {
   padding-bottom: 1rem;
+  text-align: center;
 }
 .ct-3 .content .text ul {
   list-style: none;
