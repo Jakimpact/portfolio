@@ -187,9 +187,13 @@ main small {
   column-gap: 3rem;
   row-gap: 1rem;
 }
-.ct-2 .nav-bar .formation-btn {
+.ct-2 .nav-bar a {
   width: 8rem;
   height: 3rem;
+}
+.ct-2 .nav-bar a .formation-btn {
+  width: 100%;
+  height: 100%;
   background-color: #FFFFFF;
   border: none;
   border-bottom: 0.35rem solid #263547;
@@ -197,11 +201,11 @@ main small {
   color: #263547;
   transition-duration: 0.3s;
 }
-.ct-2 .nav-bar #current-btn {
+.ct-2 .nav-bar a #current-btn {
   color: #FD4345;
   border-color: #FD4345;
 }
-.ct-2 .nav-bar .formation-btn:not(#current-btn):hover {
+.ct-2 .nav-bar a .formation-btn:not(#current-btn):hover {
   opacity: 0.7;
   cursor: pointer;
 }
@@ -402,15 +406,15 @@ main small {
     column-gap: 3rem;
   }
   .ct-4 .content .text a img {
-    width: 18rem;
-    height: 13.6rem;
+    width: 17rem;
+    height: 12.8rem;
   }
   .ct-4 .content .text a .tech-used {
-    width: 18.1rem;
-    height: 13.7rem;
+    width: 17.1rem;
+    height: 12.1rem;
   }
   .ct-4 .content .text p {
-    width: 18.5rem;
+    width: 17.5rem;
   }
 }
 
